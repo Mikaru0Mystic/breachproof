@@ -1,0 +1,48 @@
+Breachproof
+Copyright 2026 The Breachproof Authors
+
+This product is licensed under the Apache License, Version 2.0 (the "License");
+see the LICENSE file. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+
+------------------------------------------------------------------------------
+Third-party software
+------------------------------------------------------------------------------
+
+Breachproof is an ORCHESTRATION LAYER. It invokes and/or recommends the
+following independent projects, each governed by its OWN license. Breachproof
+does not vendor, modify, or relicense their source; it calls them as tools or
+installs them via its sister project, Sectinel.
+
+- Sectinel — the bundled security arsenal that Breachproof wields.
+  https://github.com/PockySweet/sectinel — Apache License 2.0
+
+- ship-safe — CLI security scanner (23 agents), by @asamassekou10.
+  https://github.com/asamassekou10/ship-safe — MIT License
+
+- Shannon (Shannon Lite) — autonomous white-box AI pentester, by Keygraph.
+  https://github.com/KeygraphHQ/shannon — GNU AGPL v3.0.
+  Invoked as an external tool only; not bundled or relicensed.
+
+- PentAGI — autonomous penetration-testing platform, by vxcontrol.
+  https://github.com/vxcontrol/pentagi — Apache License 2.0 (see its EULA).
+  Invoked as an external tool only; not bundled or relicensed.
+
+- Anthropic-Cybersecurity-Skills — 754 security skills, by @mukul975.
+  https://github.com/mukul975/Anthropic-Cybersecurity-Skills — Apache License 2.0
+
+- cybersecurity-skills — 29 security skills, by Bri Russell (@briiirussell).
+  https://github.com/briiirussell/cybersecurity-skills — MIT License
+
+- claude-cybersecurity — 8-agent orchestrator skill, by @AgriciDaniel.
+  https://github.com/AgriciDaniel/claude-cybersecurity — MIT License
+
+- Scanner engines invoked at runtime: Semgrep (semgrep.dev), OSV-Scanner
+  (Google), Trivy (Aqua Security), Gitleaks, Trufflehog, Checkov (Bridgecrew),
+  hadolint — each under its own license.
+
+"Anthropic" and "Claude" are trademarks of Anthropic PBC. All other trademarks
+are the property of their respective owners. Breachproof is not affiliated with,
+sponsored by, or endorsed by any of the above projects or trademark holders.
+
+This software is intended for authorized, defensive security use only.
