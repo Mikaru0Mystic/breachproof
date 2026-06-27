@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# scan artifacts
+results.sarif
+*.sarif
+.breachproof/
+workspaces/
+*.log
+
+# secrets / env (never commit)
+.env
+.env.*
+*.pem
+*.key
