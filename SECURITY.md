@@ -7,7 +7,7 @@ Breachproof is a security tool. We hold it to the standard it enforces.
 **Do not open a public issue for a security vulnerability.**
 
 Report privately via GitHub Security Advisories:
-**https://github.com/PockySweet/breachproof/security/advisories/new**
+**https://github.com/Mikaru0Mystic/breachproof/security/advisories/new**
 
 We aim to acknowledge within **48 hours** and to agree on a disclosure timeline
 with you. Coordinated disclosure is appreciated; we credit reporters who want it.
@@ -27,7 +27,7 @@ In scope:
 
 Out of scope (report upstream):
 - Bugs in the integrated tools themselves (Sectinel, ship-safe, Shannon,
-  PentAGI, semgrep, etc.) — please report to those projects.
+  PentAGI, semgrep, etc.): please report to those projects.
 
 ## Acceptable use
 

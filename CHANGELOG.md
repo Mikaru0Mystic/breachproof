@@ -10,7 +10,7 @@ All notable changes to Breachproof are documented here. This project follows
 - Full-auto **Detonation Sequence**: recon → threat-model → parallel scan wave →
   triage → remediate → verify → loop-until-clean → fortify → report.
 - `/breachproof` one-shot command (fire-and-forget trigger).
-- Integration with the [Sectinel](https://github.com/PockySweet/sectinel) arsenal
+- Integration with the [Sectinel](https://github.com/Mikaru0Mystic/sectinel) arsenal
   (784 skills + MCP wiring + scanner integrations).
 - SOC 2 Trust Service Criteria control mapping + regression CI-gate generation.
 - `install.sh` / `install.ps1` bootstrap installers.

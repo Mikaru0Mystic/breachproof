@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Breachproof installer — installs the agent + /breachproof command into opencode
+# Breachproof installer: installs the agent + /breachproof command into opencode
 # and pulls the Sectinel arsenal. Idempotent.
 set -euo pipefail
 
@@ -27,13 +27,13 @@ else
   echo "  → installing the Sectinel arsenal…"
   if command -v git >/dev/null 2>&1; then
     tmp="$(mktemp -d)"
-    if git clone --depth 1 https://github.com/PockySweet/sectinel.git "$tmp/sectinel" >/dev/null 2>&1; then
-      bash "$tmp/sectinel/scripts/install.sh" || echo "  ⚠ Sectinel installer failed — install manually."
+    if git clone --depth 1 https://github.com/Mikaru0Mystic/sectinel.git "$tmp/sectinel" >/dev/null 2>&1; then
+      bash "$tmp/sectinel/scripts/install.sh" || echo "  ⚠ Sectinel installer failed: install manually."
     else
-      echo "  ⚠ could not clone Sectinel. Install it from https://github.com/PockySweet/sectinel"
+      echo "  ⚠ could not clone Sectinel. Install it from https://github.com/Mikaru0Mystic/sectinel"
     fi
   else
-    echo "  ⚠ git not found. Install Sectinel manually: https://github.com/PockySweet/sectinel"
+    echo "  ⚠ git not found. Install Sectinel manually: https://github.com/Mikaru0Mystic/sectinel"
   fi
 fi
 

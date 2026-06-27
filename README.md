@@ -2,6 +2,10 @@
 
 <img src="assets/banner.svg" alt="Breachproof, the autonomous AI security agent" width="100%">
 
+<br/>
+
+**English** · [Español](README.es.md) · [简体中文](README.zh-CN.md)
+
 <br/><br/>
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](LICENSE)
@@ -11,7 +15,7 @@
 [![opencode: ready](https://img.shields.io/badge/opencode-ready-7c3aed?style=flat-square)](https://opencode.ai)
 [![Claude Code: ready](https://img.shields.io/badge/Claude_Code-ready-d97757?style=flat-square)](https://claude.ai/code)
 [![Cursor · Cline · Codex · Gemini](https://img.shields.io/badge/Cursor·Cline·Codex·Gemini-ready-22c55e?style=flat-square)](#compatibility)
-[![Arsenal: Sectinel](https://img.shields.io/badge/arsenal-Sectinel%20·%20784%20skills-00b894?style=flat-square)](https://github.com/PockySweet/sectinel)
+[![Arsenal: Sectinel](https://img.shields.io/badge/arsenal-Sectinel%20·%20784%20skills-00b894?style=flat-square)](https://github.com/Mikaru0Mystic/sectinel)
 [![SOC 2: obsessed](https://img.shields.io/badge/SOC_2-obsessed-e17055?style=flat-square)](#soc-2-as-a-dare)
 [![PRs: welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![Platforms: 12+](https://img.shields.io/badge/platforms-12%2B-blue?style=flat-square)](#compatibility)
@@ -43,7 +47,7 @@ pentesting. It runs that workflow until a project has zero open findings, then
 keeps going and overbuilds it for SOC 2.
 
 Breachproof is the operator. The weapons it wields live in its sister project,
-**[Sectinel](https://github.com/PockySweet/sectinel)**, the open security arsenal
+**[Sectinel](https://github.com/Mikaru0Mystic/sectinel)**, the open security arsenal
 (784 skills, MCP wiring, and scanner integrations). Breachproof is the brain,
 Sectinel is the armory.
 
@@ -79,11 +83,11 @@ and it never silences a real one to look done.
 ## Install
 
 **Prerequisites:** [opencode](https://opencode.ai) (or Claude Code), plus the
-[Sectinel](https://github.com/PockySweet/sectinel) arsenal for full coverage.
+[Sectinel](https://github.com/Mikaru0Mystic/sectinel) arsenal for full coverage.
 
 ```bash
 # 1. Clone
-git clone https://github.com/PockySweet/breachproof.git
+git clone https://github.com/Mikaru0Mystic/breachproof.git
 cd breachproof
 
 # 2. Install the agent + command (and pull the Sectinel arsenal)
@@ -105,7 +109,7 @@ Sectinel's arsenal to `~/.config/opencode/cybersec-arsenal/`.
 ```bash
 cp agent/breachproof.md   ~/.config/opencode/agent/
 cp command/breachproof.md ~/.config/opencode/command/
-# then install Sectinel: https://github.com/PockySweet/sectinel
+# then install Sectinel: https://github.com/Mikaru0Mystic/sectinel
 ```
 For Claude Code, copy `agent/breachproof.md` into `~/.claude/agents/` instead.
 </details>
@@ -143,7 +147,7 @@ repeating phases 2 through 6 until it's done.
 residual finding explicitly dispositioned (Fixed / False-Positive / Accepted-Risk
 / Needs-Human-Decision), and a regression gate committed.
 
-## What it wields (via [Sectinel](https://github.com/PockySweet/sectinel))
+## What it wields (via [Sectinel](https://github.com/Mikaru0Mystic/sectinel))
 
 - **ship-safe**: 23-agent defensive scanner (no API key, runs free)
 - **Sectinel 8-agent sweep** (AgriciDaniel `cybersecurity`): business logic, authz, supply chain, IaC, AI-code
@@ -155,7 +159,7 @@ residual finding explicitly dispositioned (Fixed / False-Positive / Accepted-Ris
 ## Compatibility
 
 Breachproof ships as a portable Markdown agent plus a trigger command, and its
-arsenal ([Sectinel](https://github.com/PockySweet/sectinel)) is authored to the
+arsenal ([Sectinel](https://github.com/Mikaru0Mystic/sectinel)) is authored to the
 open **[agentskills.io](https://agentskills.io)** standard. That makes the whole
 stack runtime-agnostic, so it loads anywhere skills and agents load:
 
@@ -210,7 +214,7 @@ without asking, because that's the entire point. Its only hard limits:
 
 ## Sister project
 
-**[Sectinel](https://github.com/PockySweet/sectinel)** is the open security
+**[Sectinel](https://github.com/Mikaru0Mystic/sectinel)** is the open security
 arsenal Breachproof wields: 784 skills, MCP wiring, and scanner integrations in
 one installable suite. Install Sectinel to give Breachproof its full reach.
 
@@ -231,7 +235,7 @@ Breachproof is an orchestration layer. It stands on the shoulders of the
 open-source security community and integrates these projects (each under its own
 license; Breachproof doesn't relicense them):
 
-- **[Sectinel](https://github.com/PockySweet/sectinel)**, the bundled arsenal (Apache-2.0)
+- **[Sectinel](https://github.com/Mikaru0Mystic/sectinel)**, the bundled arsenal (Apache-2.0)
 - **[ship-safe](https://github.com/asamassekou10/ship-safe)** by @asamassekou10 (MIT)
 - **[Shannon](https://github.com/KeygraphHQ/shannon)** by Keygraph (AGPL-3.0, invoked not bundled)
 - **[PentAGI](https://github.com/vxcontrol/pentagi)** by vxcontrol (Apache-2.0 / EULA, invoked not bundled)

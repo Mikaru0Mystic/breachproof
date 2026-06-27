@@ -1,4 +1,4 @@
-# Breachproof installer (Windows / PowerShell) — installs the agent +
+# Breachproof installer (Windows / PowerShell): installs the agent +
 # /breachproof command into opencode and pulls the Sectinel arsenal. Idempotent.
 $ErrorActionPreference = 'Stop'
 
@@ -29,13 +29,13 @@ if (Test-Path -LiteralPath $arsenal) {
   if (Get-Command git -ErrorAction SilentlyContinue) {
     $tmp = Join-Path ([System.IO.Path]::GetTempPath()) ("sectinel-" + [guid]::NewGuid().ToString('N'))
     try {
-      git clone --depth 1 https://github.com/PockySweet/sectinel.git $tmp 2>&1 | Out-Null
+      git clone --depth 1 https://github.com/Mikaru0Mystic/sectinel.git $tmp 2>&1 | Out-Null
       pwsh (Join-Path $tmp "scripts\install.ps1")
     } catch {
-      Write-Host "  ! Sectinel install failed - install manually: https://github.com/PockySweet/sectinel" -ForegroundColor Yellow
+      Write-Host "  ! Sectinel install failed - install manually: https://github.com/Mikaru0Mystic/sectinel" -ForegroundColor Yellow
     }
   } else {
-    Write-Host "  ! git not found. Install Sectinel manually: https://github.com/PockySweet/sectinel" -ForegroundColor Yellow
+    Write-Host "  ! git not found. Install Sectinel manually: https://github.com/Mikaru0Mystic/sectinel" -ForegroundColor Yellow
   }
 }
 

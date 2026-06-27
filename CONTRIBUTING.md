@@ -2,19 +2,19 @@
 
 Thanks for helping make codebases breachproof. The highest-signal contribution
 is **field feedback**: you pointed Breachproof at a real project and it missed a
-class of bug, faked a fix, stalled, or did something dumb. Tell us — that's
+class of bug, faked a fix, stalled, or did something dumb. Tell us: that's
 exactly the evidence that makes the next version sharper.
 
 ## Ways to contribute
 
-- **Field reports** — open an issue with what Breachproof did vs. what it should
+- **Field reports**: open an issue with what Breachproof did vs. what it should
   have done (redact secrets). This is the most valuable contribution.
-- **Detonation-sequence / agent-prompt improvements** — sharpen the autonomy
+- **Detonation-sequence / agent-prompt improvements**: sharpen the autonomy
   loop, triage, remediation, or SOC 2 mapping in `agent/breachproof.md`.
-- **New tool / skill wiring** — teach Breachproof to use another scanner, MCP,
+- **New tool / skill wiring**: teach Breachproof to use another scanner, MCP,
   or Sectinel skill. (New *skills* themselves usually belong in
-  [Sectinel](https://github.com/PockySweet/sectinel).)
-- **Docs** — clearer install, usage, or SOC 2 guidance.
+  [Sectinel](https://github.com/Mikaru0Mystic/sectinel).)
+- **Docs**: clearer install, usage, or SOC 2 guidance.
 
 ## Ground rules
 

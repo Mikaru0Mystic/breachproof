@@ -1,12 +1,12 @@
-# Adapters — run Breachproof on any agent runtime
+# Adapters: run Breachproof on any agent runtime
 
 Breachproof is a **portable Markdown agent** (`agent/breachproof.md`) plus a
 trigger (`command/breachproof.md`). Its arsenal,
-[Sectinel](https://github.com/PockySweet/sectinel), is authored to the open
+[Sectinel](https://github.com/Mikaru0Mystic/sectinel), is authored to the open
 [agentskills.io](https://agentskills.io) standard. So Breachproof is not bound to
-any one tool — here is how to load it everywhere.
+any one tool: here is how to load it everywhere.
 
-> Install the [Sectinel](https://github.com/PockySweet/sectinel) arsenal first so
+> Install the [Sectinel](https://github.com/Mikaru0Mystic/sectinel) arsenal first so
 > Breachproof has its 784 skills + scanner wiring available.
 
 ## opencode (first-class)
@@ -26,7 +26,7 @@ Invoke with `@breachproof` or "use the breachproof agent."
 Hermes loads [agentskills.io](https://agentskills.io) skills natively. Install
 the Sectinel arsenal (agentskills.io format) and load `agent/breachproof.md` as
 the system/operator prompt. Hermes' tool-calling drives the same scan→fix→verify
-loop. See the Sectinel arsenal's `SKILL.md` frontmatter — it is Hermes-ready.
+loop. See the Sectinel arsenal's `SKILL.md` frontmatter: it is Hermes-ready.
 
 ## OpenClaw
 OpenClaw consumes agentskills.io skills + portable agent prompts. Point it at

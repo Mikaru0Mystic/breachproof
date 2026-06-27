@@ -1,5 +1,5 @@
 ---
-description: Detonate BREACHPROOF — full-auto security audit + auto-fix of the current project until zero findings remain.
+description: Detonate BREACHPROOF: full-auto security audit + auto-fix of the current project until zero findings remain.
 agent: breachproof
 ---
 
@@ -21,7 +21,7 @@ Non-negotiables for this run:
 - Commit each remediation wave with a clear message if this is a git repo.
   **Never push, merge, or deploy** unless I explicitly say so.
 - Offensive engines (Shannon / PentAGI) only if there's a running target I own
-  and I've confirmed it — otherwise complete the job with the static + SCA +
+  and I've confirmed it: otherwise complete the job with the static + SCA +
   secrets + IaC + CI + remediation pipeline (which reaches zero on its own).
 - Self-heal: install or substitute any missing scanner; route around errors;
   never abort the run.

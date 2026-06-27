@@ -1,8 +1,8 @@
 # Architecture
 
 Breachproof is a **prompt-defined autonomous agent** plus a **trigger command**.
-It carries no runtime of its own — it drives the tools and skills provided by
-[Sectinel](https://github.com/PockySweet/sectinel) through the host agent runtime
+It carries no runtime of its own: it drives the tools and skills provided by
+[Sectinel](https://github.com/Mikaru0Mystic/sectinel) through the host agent runtime
 (opencode / Claude Code).
 
 ```
@@ -30,7 +30,7 @@ It carries no runtime of its own — it drives the tools and skills provided by
 |---|---|---|
 | Agent | `agent/breachproof.md` | The weapon: persona, autonomy mandate, Definition of Done, the Detonation Sequence, SOC 2 mapping, rules of engagement, report format. |
 | Command | `command/breachproof.md` | The `/breachproof` one-shot trigger that detonates the agent against the current project. |
-| Arsenal | (from Sectinel) `~/.config/opencode/cybersec-arsenal/` | 784 skills, read on demand — zero per-session context cost. |
+| Arsenal | (from Sectinel) `~/.config/opencode/cybersec-arsenal/` | 784 skills, read on demand: zero per-session context cost. |
 | Flagship skill | (from Sectinel) `~/.claude/skills/cybersecurity` | AgriciDaniel's 8-agent sweep, invocable via the skill tool. |
 
 ## Design principles

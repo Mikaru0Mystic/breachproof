@@ -30,7 +30,7 @@ To additionally run the **active-exploitation** engines (Shannon / PentAGI),
 tell Breachproof you own the target and give it the running URL, e.g.:
 
 ```
-/breachproof   then:   "I own https://staging.myapp.com — you may run Shannon against it, repo at ./."
+/breachproof   then:   "I own https://staging.myapp.com: you may run Shannon against it, repo at ./."
 ```
 
 Breachproof will refuse active exploitation without that confirmation.
@@ -60,10 +60,10 @@ jobs:
 
 - **Agent doesn't appear** → you didn't restart opencode (config loads at
   startup, no hot-reload). Quit the app fully and reopen.
-- **"Sectinel arsenal not found"** → run the [Sectinel](https://github.com/PockySweet/sectinel)
+- **"Sectinel arsenal not found"** → run the [Sectinel](https://github.com/Mikaru0Mystic/sectinel)
   installer; Breachproof still runs Tier-1/3/4 scanners without it.
 - **A scanner is missing** → Breachproof self-heals (installs or substitutes);
   if it can't, it falls back to the matching skill's manual method and notes it.
 - **It stopped early** → check the report for a `NEEDS-HUMAN-DECISION` item
-  (e.g. "rotate this leaked production key") — those are the only things it
+  (e.g. "rotate this leaked production key"): those are the only things it
   hands back.
