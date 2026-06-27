@@ -1,0 +1,20 @@
+name: CI
+on:
+  push: { branches: [ main ] }
+  pull_request: {}
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate agent + command frontmatter
+        run: |
+          for f in agent/breachproof.md command/breachproof.md; do
+            head -1 "$f" | grep -q '^---$' || { echo "::error file=$f::missing YAML frontmatter"; exit 1; }
+            echo "ok: $f"
+          done
+      - name: Lint Markdown links (basic)
+        run: |
+          ! grep -rIl "](http://" --include=*.md . || echo "note: prefer https links"
